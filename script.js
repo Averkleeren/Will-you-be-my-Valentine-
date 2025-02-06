@@ -31,6 +31,7 @@ function handleNoClick() {
     const yesButton = document.querySelector('.yes-button');
     noButton.textContent = messages[messageIndex];
     messageIndex = (messageIndex + 1) % messages.length;
+    changeGif(gifs[messageIndex]);
     const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
     yesButton.style.fontSize = `${currentSize * 1.5}px`;
 }
