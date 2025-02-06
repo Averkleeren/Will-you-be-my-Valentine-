@@ -53,9 +53,9 @@ document.querySelector(".no-button").addEventListener("mouseover", function() {
 
 // Optional: Reset the GIF when the mouse leaves both buttons
 document.querySelector(".yes-button").addEventListener("mouseleave", function() {
-    changeGif("./gifs/DancingRaccoons.gif"); // Default GIF
+    changeGif("./gifs/FrontPage.gif"); // Default GIF
 });
 
 document.querySelector(".no-button").addEventListener("mouseleave", function() {
-    changeGif("./gifs/DancingRaccoons.gif"); // Default GIF
+    changeGif("./gifs/FrontPage.gif"); // Default GIF
 });
