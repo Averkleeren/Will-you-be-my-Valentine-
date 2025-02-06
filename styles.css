@@ -47,13 +47,13 @@ body {
     display: flex;
     justify-content: center; /* Center the GIF */
     align-items: center; /* Keep it aligned */
-    height: 100px; /* Set a fixed height for the container */
+    height: 300px; /* Set a fixed height for the container */
     width: auto;
     overflow: hidden; /* Prevent resizing issues */
 }
 
 .gif_container img {
-    height: 100px; /* Fixed height */
+    height: 300px; /* Fixed height */
     width: auto; /* Maintain aspect ratio */
     object-fit: contain; /* Ensure it scales properly */
 }
