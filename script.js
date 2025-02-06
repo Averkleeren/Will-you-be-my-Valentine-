@@ -44,7 +44,7 @@ function changeGif(newSrc) {
 }
 
 document.querySelector(".yes-button").addEventListener("mouseover", function() {
-    changeGif("Yes.gif"); // Change to a happy GIF
+    changeGif("./gifs/Yes.gif"); // Change to a happy GIF
 });
 
 document.querySelector(".no-button").addEventListener("mouseover", function() {
@@ -53,9 +53,9 @@ document.querySelector(".no-button").addEventListener("mouseover", function() {
 
 // Optional: Reset the GIF when the mouse leaves both buttons
 document.querySelector(".yes-button").addEventListener("mouseleave", function() {
-    changeGif("DancingRaccoons.gif"); // Default GIF
+    changeGif("./gifs/DancingRaccoons.gif"); // Default GIF
 });
 
 document.querySelector(".no-button").addEventListener("mouseleave", function() {
-    changeGif("DancingRaccoons.gif"); // Default GIF
+    changeGif("./gifs/DancingRaccoons.gif"); // Default GIF
 });
