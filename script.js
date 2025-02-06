@@ -11,6 +11,19 @@ const messages = [
     "Just kidding, say yes please! ❤️"
 ];
 
+const gifs = [
+    "./gifs/Worried.gif",
+    "./gifs/Scared.gif",
+    "./gifs/Terrified.gif",
+    "./gifs/really.gif",
+    "./gifs/milk.gif",
+    "./gifs/Please.gif",
+    "./gifs/Sorry.gif",
+    "./gifs/betrayal.gif",
+    "./gifs/Mad.gif",
+    "./gifs/NO.gif"
+];
+
 let messageIndex = 0;
 
 function handleNoClick() {
@@ -25,3 +38,24 @@ function handleNoClick() {
 function handleYesClick() {
     window.location.href = "yes_page.html";
 }
+
+function changeGif(newSrc) {
+    document.querySelector(".gif_container img").src = newSrc;
+}
+
+document.querySelector(".yes-button").addEventListener("mouseover", function() {
+    changeGif("Yes.gif"); // Change to a happy GIF
+});
+
+document.querySelector(".no-button").addEventListener("mouseover", function() {
+    changeGif(gifs[messageIndex]); // Change to a sad GIF
+});
+
+// Optional: Reset the GIF when the mouse leaves both buttons
+document.querySelector(".yes-button").addEventListener("mouseleave", function() {
+    changeGif("DancingRaccoons.gif"); // Default GIF
+});
+
+document.querySelector(".no-button").addEventListener("mouseleave", function() {
+    changeGif("DancingRaccoons.gif"); // Default GIF
+});
